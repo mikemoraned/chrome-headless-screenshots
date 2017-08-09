@@ -19,4 +19,7 @@ RUN npm install
 # Prepare output area
 RUN mkdir -p /var/output/
 
+# Make executable
+RUN chmod +x ./run.sh
+
 ENTRYPOINT ./run.sh
